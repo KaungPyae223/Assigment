@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="image/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Us</title>
+</head>
+
+<body class="Register">
+    <header>
+        <a href="Home.html" title="Exit from the Register" class="exit"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        <h1>Event Register</h1>
+    </header>
+    <section class="RegisterSection">
+        <div class="Registerinfo">
+            <h2>
+                The Europian VintageRally tour
+            </h2>
+            <h3 class="country">
+                France - Belgium - Netherlands - Germany - Czech
+            </h3>
+            <p class="registerinfop">
+                During the covid pandamic time, our members could not met each other and we stopped our tour. So, in 2023 we decided to make a Europian vantage rally tour. The rally tour will take from 27th January 2023 to
+                30th April 2023 but we haven't decided the details date for each country. When we have deciede, we will announced it.
+            </p>
+            
+            <table>
+                <tr>
+                    <th colspan="3">The cities contain in the rally tour are</th>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td class="dot">:</td>
+                    <td>Paris Marseille Lyon</td>
+                </tr>
+                <tr>
+                    <td>Belgium</td>
+                    <td class="dot">:</td>
+                    <td>Antwerp</td>
+                </tr>
+                <tr>
+                    <td>Netherland</td>
+                    <td class="dot">:</td>
+                    <td>Amsterdam Hague</td>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td class="dot">:</td>
+                    <td>Berlin Munich</td>
+                </tr>
+                <tr>
+                    <td>Czech</td>
+                    <td class="dot">:</td>
+                    <td>Prague</td>
+                </tr>
+            </table>
+            <div class="rgisterinfocontainer">
+                <div class="registerinfodetails">
+                    <i class="fa-solid fa-car"></i>
+                    <h3>Cars</h3>
+                    <ul>
+                        <li>over 50 valley cars</li>
+                    </ul>
+                </div>
+                <div class="registerinfodetails">
+                    <i class="fa-regular fa-clock"></i>
+                    <h3>Times</h3>
+                    <ul>
+                        <li>8 a.m to 12 a.m</li>
+                        <li>1 p.m to 5 p.m</li>
+                        <li>6 p.m to 9 p.m</li>
+                    </ul>
+                </div>
+                <div class="registerinfodetails">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                    <h3>Events</h3>
+                    <ul>
+                        <li>Rally car shows</li>
+                        <li>Night party</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="RegisterForm">
+            <h2>Registeriation Form</h2>
+            <form>
+                <input type="text" class="Registerinput" placeholder="Full Name" required>
+                <input type="email" class="Registerinput" placeholder="Email" required>
+                <select class="Registerinput" title="Select a contry that you participant">
+                    <option>Select a country</option>
+                    <option>France</option>
+                    <option>Belgium</option>
+                    <option>Netherland</option>
+                    <option>Germany</option>
+                    <option>Czech</option>
+                </select>
+                <select class="Registerinput" title="Select a city that you participant">
+                    <option>Select a City</option>
+                    <option>France</option>
+                    <option>Belgium</option>
+                    <option>Netherland</option>
+                    <option>Germany</option>
+                    <option>Czech</option>
+                </select>
+                <select class="Registerinput" title="Select a city that you participant">
+                    <option>Select an event time</option>
+                    <option>8 a.m to 12 a.m</option>
+                    <option>1 p.m to 5 p.m</option>
+                    <option>6 p.m to 9 p.m</option>
+                </select>
+                <button type="submit" class="Registerinput Rgrbtn" onclick="showreach()">Register</button>
+                <p class="Registerp">The event date detals will be announced later.</p>
+            </form>
+        </div>
+    </section>
+    <footer class="RegisterFooter">
+        <p class="copy">&copy; 2022 www.VintageRally.com | All rights reserved.</p>
+    </footer>
+    <div class="reach" id="reach">
+        <div class="reachcontact">
+            <h2>Successfully Registered</h2>
+            <h4>We recived your registeriation.</h4>
+            <p>Thanks for your Registeriation and we will contact you when we have details information of our event, from Email. Don't miss to check out.</p>
+            <button class="readmore" onclick="hidereach()">Comfirm</button>
+        </div>
+    </div>
+    <script>
+        function showreach() {
+            document.getElementById('reach').style.display="flex";
+        }
+        function hidereach() {
+            document.getElementById('reach').style.display="none";
+        }
+    </script>
+</body>
+
+</html>

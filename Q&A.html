@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="image/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Q&A</title>
+</head>
+<body class="home">
+    <input type="checkbox" id="Slidemenu">
+    <input type="checkbox" id="modal">
+    <input type="checkbox" id="Question">
+    <header>
+        <div class="slide">
+            
+            <img src="image/logo-removebg-preview.png" alt="logo">
+            <ul>
+                <li><h2><i class="fa-solid fa-circle-question"></i>&nbsp;Q&A</h2></li>
+                <li><a href="Home.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                <li><a href="ContactUs.html"><i class="fa-solid fa-message"></i>Contact Us</a></li>
+                <li><a href="AboutUs.html"><i class="fa-solid fa-address-card"></i>About Us</a></li>
+                <li><a href="OurDriver.html"><i class="fa-solid fa-id-badge"></i>Our Drivers</a></li>
+    
+            </ul>
+            <div class="slidelast">
+                <p>Contact us</p>
+                <div class="content">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+    
+                </div>
+                <p>www.Valley.com<br>copyright &copy; 2022</p>
+            </div>
+        </div>
+        <nav>
+            <div class="slideicon">
+                <label for="Slidemenu" class="menuicon">
+                    <span class="upper line"></span>
+                    <span class="middle line"></span>
+                    <span class="button line"></span>
+                </label>
+                <label for="Slidemenu">
+                    <span class="Slideheader">Q&A</span>
+                </label>
+            </div>
+            
+            <img src="image/logo-removebg-preview.png" alt="logo">
+            <ul class="link">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><p>Q&A</p></li>
+                <li><a href="OurDriver.html">Our drivers</a></li>
+            </ul>
+                <label for="modal" class="getStart">
+                    Get Started
+                </label>
+            </nav>
+            <div class="modaldisplay">
+            <div class="login">
+                <img src="image/logo-removebg-preview.png" alt="logo">
+                <h4>Sign In</h4>
+                <form>
+                    <input type="email" class="in" placeholder="Enter your email" required autofocus>
+                    <input type="password" class="in" placeholder="Enter your password" required>
+                    <a href="" class="forgot">Forgot password?</a>
+                    <div class="comfirm">
+                        <label for="modal" class="c co">Cancel</label>
+                        <button type="submit" class="c sub">Submit</button>
+                    </div>
+                </form>
+                <p>Or Sign In with Using Social Media</p>
+                <div class="signup">
+                    <a href=""><i class="fa-brands fa-google"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <p>Do not have an account?</p>
+                <a href="" class="su">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <section class="QA">
+        <div class="QAintro">
+            <h2>
+                What Question do you want to ask?
+            </h2>
+            <div id="search">
+                <button class="search1" onclick="showsearch()">Search</button>
+                <input type="text" placeholder="Type a Question" id="searchtxt">
+                <button id="X" onclick="hidesearch()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <small id="small">Press search button to search by voice</small>
+        </div>
+        <div class="MostlyQuestion">
+            <h2>Mostly ask Questions</h2>
+            <label for="Question" class="QApart">
+                <span class="Q">
+                    Do we need to give member fee to become a member ?
+                </span>
+                
+                <span class="questionicon">
+                    <i class="fa-solid fa-greater-than"></i>
+                </span>
+            </label>
+            <div class="answer">
+                <h2>Especially No but Yes for Special Member</h2>
+                <p>
+                    Do not need to give member fees for normal member but need to give a special members. The difference between normal members and special members are
+                </p>
+                <h3>Normal member</h3>
+                <p>Normal members can participant most of our club festivals but do not get our annual aniversity gifts, discounts and other features.</p>
+                <h3>Special member</h3>
+                <p>Special members can participant all of our festivals and can get our aniversity gifts, discounts, cupons and other accecies.</p>
+                <br>
+            </div>
+            <label class="QApart">
+                <span class="Q">
+                    What do we need to be a member ?
+                </span>
+                <span class="questionicon1">
+                    <i class="fa-solid fa-greater-than"></i>
+                </span>
+            </label>
+            <label class="QApart">
+                <span class="Q">
+                    Do we need vintage rally car to be a member ?
+                </span>
+                <span class="questionicon1">
+                    <i class="fa-solid fa-greater-than"></i>
+                </span>
+            </label>
+            <label class="QApart">
+                <span class="Q">
+                   What services does this club give about vintage rally cars ?
+                </span>
+                <span class="questionicon1">
+                    <i class="fa-solid fa-greater-than"></i>
+                </span>
+            </label>
+            <label class="QApart">
+                <span class="Q">
+                    Can we ask the question about vintage rally car problems ?
+                </span>
+                <span class="questionicon1">
+                    <i class="fa-solid fa-greater-than"></i>
+                </span>
+            </label>
+            <button class="rm">Read more Questions</button>
+        </div>
+        <div class="extraquestion">
+            <h2>Do you have any questions to ask directly of our Club ? </h2>
+            <p>You need to register first to ask Question.</p>
+            <div>
+                <textarea placeholder="Please type here a Question you want to know?" maxlength="300"></textarea>
+                <p class="note"><small>Note! you can type only a maximum of 300 characters </small></p>
+                <button class="readmore" onclick="showreach()">Send a Question</button>
+            </div>
+            <br>
+        </div>
+
+    </section>
+    <div class="reach" id="reach">
+        <div class="reachcontact">
+            <h2>Successfully Send</h2>
+            <h4>We recived your Question Successfully.</h4>
+            <p>Thanks for your question and we will answer your question very shortly from Email. Don't miss to check out.</p>
+            <button class="readmore" onclick="hidereach()">Comfirm</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <img src="image/logo-removebg-preview.png" alt="logo">
+            <div class="T">
+                <table>
+                    
+                    <tr>
+                        <th>Help</th>
+                        <th>Legal Info</th>
+                        <th>Community</th>
+                    </tr>
+                    <tr>
+                        <td><a href="">Help & Faq</a></td>
+                        <td><a href="">Privacy Policy</a></td>
+                        <td><a href="">Community Center</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Our Services</a></td>
+                        <td><a href="">Terms & Condition</a></td>
+                        <td><a href="">Support</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Contact us</a></td>
+                        <td><a href="">Cookie Policy</a></td>
+                        <td></td>
+                    </tr>
+                    
+                    
+                </table>
+            </div>
+            <div class="connect">
+                <h1>Let's stay connect</h1>
+                <p>Enter your Email to Connect</p>
+                <div>
+                    <input type="email" placeholder="Your Email "  class="c1"><button type="submit" class="c1 c2">Connect</button>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-snapchat"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copy">&copy; 2022 www.VintageRally.com | All rights reserved.
+        </p>
+
+    </footer>
+    <script>
+        function showsearch() {
+            document.getElementById('search').style.width="315px";
+            document.getElementById('searchtxt').style.display="inline";
+            document.getElementById('X').style.display="inline";
+            document.getElementById('small').style.visibility="visible";
+            
+        }
+        function hidesearch() {
+            document.getElementById('search').style.width="74px";
+            document.getElementById('searchtxt').style.display="none";
+            document.getElementById('X').style.display="none";
+            document.getElementById('small').style.visibility="hidden";
+        }
+        function showreach() {
+			document.getElementById('reach').style.display="flex";
+		}
+        function hidereach() {
+			document.getElementById('reach').style.display="none";
+		}
+    </script>
+</body>
+</html>
